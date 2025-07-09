@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn more about our team and vision." />
+  <title><%=About Us%></title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    h1 {
+      color: #222;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .team-section {
+      margin-top: 30px;
+    }
+
+    .team-section h2 {
+      color: #4a90e2;
+      margin-bottom: 10px;
+    }
+
+    .team-member {
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><%=About Us%></h1>
+  </header>
+
+  <div class="container">
+    <p><%= description %></p>
+
+    <div class="team-section">
+      <h2>Our Team</h2>
+      <% team.forEach(member => { %>
+        <div class="team-member">👤 <%= member %></div>
+      <% }) %>
+    </div>
+  </div>
+</body>
+</html>

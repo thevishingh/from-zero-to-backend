@@ -1,0 +1,17 @@
+# Logs
+node_modules/
+npm-debug.log
+# Environment variables
+.env
+# Build output
+dist/
+# Dependency directories
+bower_components/
+# IDE specific files
+.idea/
+# OS generated files
+.DS_Store
+# Coverage directory used by tools like istanbul
+coverage/
+# Temporary files
+tmp/
